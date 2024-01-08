@@ -14,8 +14,6 @@ public class DAOHibernateRepository {
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	List<Person> persons;
-
 	public Person savePerson(Person person) {
 		entityManager.persist(person);
 		return person;
